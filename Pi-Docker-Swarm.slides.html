@@ -11935,6 +11935,19 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Pi">Pi<a class="anchor-link" href="#Pi">&#182;</a></h2><p><a href="https://www.raspberrypi.org/">Teach, Learn and Make with Raspberry Pi</a></p>
+<blockquote><p>Der im Vergleich zu üblichen Personal Computern sehr einfach aufgebaute Rechner wurde von der Stiftung (Raspberry Pi Foundation) mit dem Ziel entwickelt, jungen Menschen den Erwerb von Programmier- und Hardwarekenntnissen zu erleichtern. Entsprechend niedrig wurde der Verkaufspreis angesetzt, der je nach Modell etwa 5 bis 35 USD beträgt.</p>
+</blockquote>
+<p>Die Motivation steigt.</p>
+<p>Starterseminar im FabLab Nbg durch KNF möglich.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Tausend-Pis">Tausend Pis<a class="anchor-link" href="#Tausend-Pis">&#182;</a></h3><p><img src="https://1.f.ix.de/scale/geometry/700/q75/imgs/18/2/3/1/8/1/1/4/BitScope-Cluster-82a1783ecfe2da18.png" alt="BitScope-Einschub mit 144 Raspberry Pi 3 auf 6 HE" style="width: 500px;"/></p>
 <p>BitScope-Einschub mit 144 Raspberry Pi 3 auf 6 HE.</p>
 <p><a href="http://www.lanl.gov/discover/news-release-archive/2017/November/1113-raspberry-pi.php">Scalable clusters make HPC R&amp;D easy as Raspberry Pi</a></p>
@@ -11949,7 +11962,25 @@ a.anchor-link {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="KNF-FabLab-Edu-Pi-Cluster">KNF FabLab Edu Pi Cluster<a class="anchor-link" href="#KNF-FabLab-Edu-Pi-Cluster">&#182;</a></h3><p>Hat den gleichen Zweck wie die 1000 Pis oben. Hier kann einen Cluster betrieben werden, <strong>ohne</strong> dafür einige Tausend Euro in ein Rechenzentrum auszuzugeben. Es wurden ca. 500 € investiert.</p>
+<h3 id="KNF-FabLab-Edu-Pi-Cluster">KNF FabLab Edu Pi Cluster<a class="anchor-link" href="#KNF-FabLab-Edu-Pi-Cluster">&#182;</a></h3><p>Das fliegende Rechenzentrum.</p>
+<p>Hat den gleichen Zweck wie die 1000 Pis oben. Hier kann einen Cluster betrieben werden, <strong>ohne</strong> dafür einige Tausend Euro in ein Rechenzentrum auszuzugeben. Es wurden ca. 500 € investiert.</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Warum-mach-ich-DevOps-und-Docker">Warum mach ich DevOps und Docker<a class="anchor-link" href="#Warum-mach-ich-DevOps-und-Docker">&#182;</a></h3><ul>
+<li>Auf <a href="https://openspacer.org/60-devops-community/">DevOps-Camp 2014</a> kennengelernt</li>
+<li>KNF-Vortrag Kongress 2014 zu <a href="https://cloud.franken.de/owncloud/index.php/s/dbf8ab8c95016a68d49ebb289025d5a9">ansible</a></li>
+<li><a href="http://blog.hypriot.com/">Stay on the cutting edge with Docker 1.6 and test drive it on your Raspberry Pi today</a></li>
+<li><a href="https://www.meetup.com/de-DE/Docker-Bamberg">Docker-Bamberg Meetup</a></li>
+<li>Serverspec auf <a href="https://openspacer.org/60-devops-community/61-devops-camp-2015/">DevOps-Camp 2015</a> kennen gelernt</li>
+<li>Seit Sommer 2017 <a href="https://github.com/kraeml/raspberry-edu-devops">Raspberry Edu devops Setup</a></li>
+<li>Seit Sommer 2017 <a href="https://github.com/kraeml/packer-ubuntu-1604-de">heterogenes Virtuelles Netzwerk für DevOps</a></li>
+</ul>
 
 </div>
 </div>
@@ -12010,7 +12041,8 @@ a.anchor-link {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>docker version
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># Docker version auf den Pi-Cluster</span>
+docker version
 </pre></div>
 
 </div>
@@ -12055,7 +12087,7 @@ Server:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Docker ist eiene Betriebssystemvirtualisierung mittels OS-Container wie sie auch LXC, LXD, Jail (BSD), Zone (Solaris) und auch <a href="http://www.zdnet.de/88246989/docker-und-windows-server-2016-das-muessen-profis-wissen/?inf_by=5a143495671db8a11f8b4a68">Windows Server Container</a> (Docker for Windows) bieten.</p>
+<h4 id="Was-ist-Docker">Was ist Docker<a class="anchor-link" href="#Was-ist-Docker">&#182;</a></h4><p>Docker ist eiene <strong>Betriebssystemvirtualisierung</strong> mittels OS-Container wie sie auch <em>LXC</em>, <em>LXD</em>, <em>Jail</em> (BSD), <em>Zone</em> (Solaris) und auch <a href="http://www.zdnet.de/88246989/docker-und-windows-server-2016-das-muessen-profis-wissen/?inf_by=5a143495671db8a11f8b4a68">Windows Server Container</a> (Docker for Windows) bieten.</p>
 <p>Bei der Betriebssystemvirtualisierung läuft nur ein Host-Kernel.</p>
 
 </div>
@@ -12157,12 +12189,22 @@ Server:
 </table>
 </div>
 </div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Und-wieder-hypriot">Und wieder hypriot<a class="anchor-link" href="#Und-wieder-hypriot">&#182;</a></h2><p><a href="http://blog.hypriot.com/post/dockerconaustin2017/">DockerCon 2017 Demo: Monitoring Docker Swarm with LED's</a></p>
+<p><img src="http://blog.hypriot.com/images/dockercon2017/stage2.jpg" alt="PiCloud at DockerCon Austin" /></p>
+
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Docker-Swarm-aufsetzen">Docker Swarm aufsetzen<a class="anchor-link" href="#Docker-Swarm-aufsetzen">&#182;</a></h2><h3 id="Zun&#228;chst-die-IP-Adresse-feststellen">Zun&#228;chst die IP-Adresse feststellen<a class="anchor-link" href="#Zun&#228;chst-die-IP-Adresse-feststellen">&#182;</a></h3><p>Hierzu werden die Variablen IP_LEADER und ggf. IP_LEADER_WLAN gesetzt.</p>
+<h2 id="Docker-Swarm-aufsetzen">Docker Swarm aufsetzen<a class="anchor-link" href="#Docker-Swarm-aufsetzen">&#182;</a></h2><h3 id="Zun&#228;chst-die-IP-Adresse-feststellen">Zun&#228;chst die IP-Adresse feststellen<a class="anchor-link" href="#Zun&#228;chst-die-IP-Adresse-feststellen">&#182;</a></h3><p>Die Ip des AP (Leader) wird öfters benötigt und in IP_LEADER bzw. IP_LEADER_WLAN gespeichert.</p>
 
 </div>
 </div>
@@ -12235,7 +12277,7 @@ Server:
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Docker-Swarm-Init">Docker Swarm Init<a class="anchor-link" href="#Docker-Swarm-Init">&#182;</a></h3><p>Zunächst wird festgestellt ob es schon einen Docker Swarm gibt und wenn nicht, dann wird dieser angelegt und hier ausgegeben.</p>
+<h3 id="Docker-Swarm-Init">Docker Swarm Init<a class="anchor-link" href="#Docker-Swarm-Init">&#182;</a></h3><p>Feststellen ob es schon einen Docker Swarm gibt und wenn nicht, dann wird dieser angelegt und sein Status ausgegeben.</p>
 
 </div>
 </div>
@@ -12263,16 +12305,16 @@ Server:
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Error response from daemon: This node is not a swarm manager. Use &#34;docker swarm init&#34; or &#34;docker swarm join&#34; to connect this node to swarm and try again.
-Swarm initialized: current node (rx284usn4d3b2c2xif451af2q) is now a manager.
+Swarm initialized: current node (pqp74pxig8s3zs07eafeugjuq) is now a manager.
 
 To add a worker to this swarm, run the following command:
 
-    docker swarm join --token SWMTKN-1-1blok45xqni9go492p7eaux2msme096osbzedx4yr1abuvsggz-4xqbdhjis3nx3ey1hdrpcwmf0 172.24.2.1:2377
+    docker swarm join --token SWMTKN-1-5k75rxbk2t9tf5m6bc1bfv5846jhgm15jffd4teh283cy8um9e-4znifs51sy43cdotqqlmsds0o 172.24.2.1:2377
 
 To add a manager to this swarm, run &#39;docker swarm join-token manager&#39; and follow the instructions.
 
 ID                            HOSTNAME            STATUS              AVAILABILITY        MANAGER STATUS
-rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active              Leader
+pqp74pxig8s3zs07eafeugjuq *   cluster-00          Ready               Active              Leader
 </pre>
 </div>
 </div>
@@ -12285,7 +12327,7 @@ rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active    
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Token">Token<a class="anchor-link" href="#Token">&#182;</a></h3><p>Damit die einzelnen Nodes dem Cluster beitreten können wird ein Token benötigt.</p>
+<h3 id="Token">Token<a class="anchor-link" href="#Token">&#182;</a></h3><p>Damit die einzelnen Nodes dem Cluster beitreten können werden die Token für <code>worker</code> und <code>manger</code> gespeichert.</p>
 
 </div>
 </div>
@@ -12313,7 +12355,7 @@ rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active    
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>SWMTKN-1-1blok45xqni9go492p7eaux2msme096osbzedx4yr1abuvsggz-4xqbdhjis3nx3ey1hdrpcwmf0
+<pre>SWMTKN-1-5k75rxbk2t9tf5m6bc1bfv5846jhgm15jffd4teh283cy8um9e-4znifs51sy43cdotqqlmsds0o
 </pre>
 </div>
 </div>
@@ -12345,7 +12387,7 @@ rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active    
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>SWMTKN-1-1blok45xqni9go492p7eaux2msme096osbzedx4yr1abuvsggz-5z8veidl2bt6vxijk8eadsv24
+<pre>SWMTKN-1-5k75rxbk2t9tf5m6bc1bfv5846jhgm15jffd4teh283cy8um9e-eoi1dzztzmb9sa373hewahl6w
 </pre>
 </div>
 </div>
@@ -12358,7 +12400,8 @@ rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active    
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="SSH-einrichten">SSH einrichten<a class="anchor-link" href="#SSH-einrichten">&#182;</a></h2><p>Der Klassiker mit Schlüsselaustausch.</p>
+<h2 id="SSH-einrichten">SSH einrichten<a class="anchor-link" href="#SSH-einrichten">&#182;</a></h2><p>Der Klassiker mit Schlüsselaustausch und allem drum und dran.</p>
+<p>Gut geeignet für den Unterrichtsstoff.</p>
 <p>ToDo: Dies kann man mit docker machine umgehen.</p>
 
 </div>
@@ -12374,10 +12417,11 @@ rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active    
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>docker node ls
+<div class=" highlight hl-bash"><pre><span></span><span class="c1"># Noch ist unser Swarm allein</span>
+docker node ls
 </pre></div>
 
 </div>
@@ -12395,7 +12439,7 @@ rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active    
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                            HOSTNAME            STATUS              AVAILABILITY        MANAGER STATUS
-rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active              Leader
+pqp74pxig8s3zs07eafeugjuq *   cluster-00          Ready               Active              Leader
 </pre>
 </div>
 </div>
@@ -12408,6 +12452,7 @@ rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active    
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Die-Worker">Die Worker<a class="anchor-link" href="#Die-Worker">&#182;</a></h2><p>Achtung nicht nur die Worker verrichten die Arbeit, sondern auch die Manager :-))</p>
 <p>Nur der Client 01 und 03 als Worker dem Swarm beitreten.</p>
 
 </div>
@@ -12415,7 +12460,7 @@ rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active    
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="c1">#set -x</span>
@@ -12456,7 +12501,7 @@ This node joined a swarm as a worker.
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker node ls
@@ -12477,9 +12522,9 @@ This node joined a swarm as a worker.
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                            HOSTNAME            STATUS              AVAILABILITY        MANAGER STATUS
-rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active              Leader
-lxpvb7dr0hwk0nj96va4wo6ny     cluster-01          Ready               Active              
-vafxcqkmo3973p6cye7oaubhi     cluster-03          Ready               Active              
+pqp74pxig8s3zs07eafeugjuq *   cluster-00          Ready               Active              Leader
+0br7aj8dld5sr73vic82s3jo6     cluster-01          Ready               Active              
+qocjbg98xx6pr5ig1zc4k3dpk     cluster-03          Ready               Active              
 </pre>
 </div>
 </div>
@@ -12492,6 +12537,7 @@ vafxcqkmo3973p6cye7oaubhi     cluster-03          Ready               Active
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Die-Manger">Die Manger<a class="anchor-link" href="#Die-Manger">&#182;</a></h2><p>Diese haben neben der Aufgabe des Workers auch eine Ausfallsicherheit des Leaders zu gewährleisten.</p>
 <p>Der Client 02 und 04 als Manger dem Swarm beitreten.</p>
 
 </div>
@@ -12499,7 +12545,7 @@ vafxcqkmo3973p6cye7oaubhi     cluster-03          Ready               Active
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="k">for</span> i in <span class="m">02</span> <span class="m">04</span><span class="p">;</span> <span class="k">do</span>
@@ -12538,7 +12584,7 @@ This node joined a swarm as a manager.
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker node ls
@@ -12559,11 +12605,11 @@ This node joined a swarm as a manager.
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                            HOSTNAME            STATUS              AVAILABILITY        MANAGER STATUS
-rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active              Leader
-lxpvb7dr0hwk0nj96va4wo6ny     cluster-01          Ready               Active              
-6l33eyp0sgsa4t6jlabdtfadf     cluster-02          Ready               Active              Reachable
-vafxcqkmo3973p6cye7oaubhi     cluster-03          Ready               Active              
-wclq49biuqsgjql5dryawms5s     cluster-04          Ready               Active              Reachable
+pqp74pxig8s3zs07eafeugjuq *   cluster-00          Ready               Active              Leader
+0br7aj8dld5sr73vic82s3jo6     cluster-01          Ready               Active              
+v9odvkkycga6enf7ld6uok9vg     cluster-02          Ready               Active              Reachable
+qocjbg98xx6pr5ig1zc4k3dpk     cluster-03          Ready               Active              
+c9rzz568a8lr2jzecbsveikxp     cluster-04          Ready               Active              Reachable
 </pre>
 </div>
 </div>
@@ -12583,7 +12629,7 @@ wclq49biuqsgjql5dryawms5s     cluster-04          Ready               Active    
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service create <span class="se">\</span>
@@ -12610,10 +12656,10 @@ wclq49biuqsgjql5dryawms5s     cluster-04          Ready               Active    
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>wx8tak0n9j6xsdsz4k5rp1jn8
+<pre>ohooxit3x6prghe14346a8sss
 
 all progress: 0 out of 1 tasks 
-all progress: 1 out of 1 tasks 
+all progress: 1 out of 1 tasks alizer-arm:latest 
 fy: Service converged to verify that tasks are stable... </pre>
 </div>
 </div>
@@ -12633,7 +12679,7 @@ fy: Service converged to verify that tasks are stable... </pre>
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;http://</span><span class="si">${</span><span class="nv">IP_LEADER_WLAN</span><span class="si">}</span><span class="s2">:8000&quot;</span>
@@ -12666,7 +12712,7 @@ http://172.24.2.1:8000
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service ls
@@ -12687,7 +12733,7 @@ http://172.24.2.1:8000
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                  NAME                MODE                REPLICAS            IMAGE                              PORTS
-wx8tak0n9j6x        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
+ohooxit3x6pr        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
 </pre>
 </div>
 </div>
@@ -12711,7 +12757,7 @@ wx8tak0n9j6x        visualizer          replicated          1/1                 
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service create --name monitor --mode global <span class="se">\</span>
@@ -12736,13 +12782,13 @@ wx8tak0n9j6x        visualizer          replicated          1/1                 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>ulooqfaxi2euhrao9rogoo8mt
+<pre>bql95rhwlmtnfopbxgeuoydgn
 
 all progress: 0 out of 5 tasks asks 
-eyp0sgsa: assigned  
-b7dr0hwk: assigned  
-4usn4d3b: assigned  
-49biuqsg: assigned  
+aj8dld5s: assigned  
+bg98xx6p: assigned  
+4pxig8s3: assigned  
+vkkycga6: assigned  
 all progress: 5 out of 5 tasks 
 fy: Service converged to verify that tasks are stable... </pre>
 </div>
@@ -12754,7 +12800,7 @@ fy: Service converged to verify that tasks are stable... </pre>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service ls
@@ -12775,8 +12821,8 @@ fy: Service converged to verify that tasks are stable... </pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                  NAME                MODE                REPLICAS            IMAGE                              PORTS
-ulooqfaxi2eu        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
-wx8tak0n9j6x        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
+bql95rhwlmtn        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
+ohooxit3x6pr        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
 </pre>
 </div>
 </div>
@@ -12796,7 +12842,7 @@ wx8tak0n9j6x        visualizer          replicated          1/1                 
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service create --name whoami <span class="se">\</span>
@@ -12819,7 +12865,7 @@ wx8tak0n9j6x        visualizer          replicated          1/1                 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>vmse6aj34ipbfl81itxb7acic
+<pre>gkhxl78gt5tk5vd77qpjfinua
 
 all progress: 0 out of 1 tasks 
 all progress: 1 out of 1 tasks 
@@ -12833,7 +12879,7 @@ fy: Service converged to verify that tasks are stable... </pre>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service ls
@@ -12854,9 +12900,9 @@ fy: Service converged to verify that tasks are stable... </pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                  NAME                MODE                REPLICAS            IMAGE                              PORTS
-ulooqfaxi2eu        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
-wx8tak0n9j6x        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
-vmse6aj34ipb        whoami              replicated          1/1                 stefanscherer/whoami:1.1.0         
+bql95rhwlmtn        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
+ohooxit3x6pr        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
+gkhxl78gt5tk        whoami              replicated          1/1                 stefanscherer/whoami:1.1.0         
 </pre>
 </div>
 </div>
@@ -12876,7 +12922,7 @@ vmse6aj34ipb        whoami              replicated          1/1                 
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service update <span class="se">\</span>
@@ -12898,7 +12944,12 @@ vmse6aj34ipb        whoami              replicated          1/1                 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>whoami
+<pre>image stefanscherer/whoami:1.2.0 could not be accessed on a registry to record
+its digest. Each node will access stefanscherer/whoami:1.2.0 independently,
+possibly leading to different nodes running different
+versions of the image.
+
+whoami
 
 all progress: 0 out of 1 tasks 
 all progress: 1 out of 1 tasks 
@@ -12912,7 +12963,7 @@ fy: Service converged to verify that tasks are stable... </pre>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service ls
@@ -12933,9 +12984,9 @@ fy: Service converged to verify that tasks are stable... </pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                  NAME                MODE                REPLICAS            IMAGE                              PORTS
-ulooqfaxi2eu        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
-wx8tak0n9j6x        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
-vmse6aj34ipb        whoami              replicated          1/1                 stefanscherer/whoami:1.2.0         
+bql95rhwlmtn        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
+ohooxit3x6pr        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
+gkhxl78gt5tk        whoami              replicated          1/1                 stefanscherer/whoami:1.2.0         
 </pre>
 </div>
 </div>
@@ -12954,7 +13005,7 @@ vmse6aj34ipb        whoami              replicated          1/1                 
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service scale --detach<span class="o">=</span><span class="nb">false</span> <span class="nv">whoami</span><span class="o">=</span><span class="m">5</span>
@@ -12992,7 +13043,7 @@ fy: Service converged to verify that tasks are stable... </pre>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service ls
@@ -13013,9 +13064,9 @@ fy: Service converged to verify that tasks are stable... </pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                  NAME                MODE                REPLICAS            IMAGE                              PORTS
-ulooqfaxi2eu        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
-wx8tak0n9j6x        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
-vmse6aj34ipb        whoami              replicated          5/5                 stefanscherer/whoami:1.2.0         
+bql95rhwlmtn        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
+ohooxit3x6pr        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
+gkhxl78gt5tk        whoami              replicated          5/5                 stefanscherer/whoami:1.2.0         
 </pre>
 </div>
 </div>
@@ -13034,7 +13085,7 @@ vmse6aj34ipb        whoami              replicated          5/5                 
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service update <span class="se">\</span>
@@ -13056,7 +13107,12 @@ vmse6aj34ipb        whoami              replicated          5/5                 
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>whoami
+<pre>image stefanscherer/whoami:1.1.0 could not be accessed on a registry to record
+its digest. Each node will access stefanscherer/whoami:1.1.0 independently,
+possibly leading to different nodes running different
+versions of the image.
+
+whoami
 
 all progress: 0 out of 5 tasks 
    K$&lt;3&gt;$&lt;3&gt;
@@ -13083,7 +13139,7 @@ fy: Service converged to verify that tasks are stable... </pre>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service scale --detach<span class="o">=</span><span class="nb">false</span> <span class="nv">whoami</span><span class="o">=</span><span class="m">20</span>
@@ -13144,7 +13200,7 @@ fy: Service converged to verify that tasks are stable... </pre>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service update --update-parallelism <span class="m">5</span> <span class="se">\</span>
@@ -13166,7 +13222,12 @@ fy: Service converged to verify that tasks are stable... </pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>whoami
+<pre>image stefanscherer/whoami:1.2.0 could not be accessed on a registry to record
+its digest. Each node will access stefanscherer/whoami:1.2.0 independently,
+possibly leading to different nodes running different
+versions of the image.
+
+whoami
 
 all progress: 0 out of 20 tasks 
 :   $&lt;3&gt;$&lt;3&gt;
@@ -13199,7 +13260,7 @@ fy: Service converged to verify that tasks are stable... </pre>
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service ls
@@ -13220,9 +13281,9 @@ fy: Service converged to verify that tasks are stable... </pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                  NAME                MODE                REPLICAS            IMAGE                              PORTS
-ulooqfaxi2eu        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
-wx8tak0n9j6x        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
-vmse6aj34ipb        whoami              replicated          20/20               stefanscherer/whoami:1.2.0         
+bql95rhwlmtn        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
+ohooxit3x6pr        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
+gkhxl78gt5tk        whoami              replicated          20/20               stefanscherer/whoami:1.2.0         
 </pre>
 </div>
 </div>
@@ -13241,7 +13302,7 @@ vmse6aj34ipb        whoami              replicated          20/20               
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service scale --detach<span class="o">=</span><span class="nb">false</span> <span class="nv">whoami</span><span class="o">=</span><span class="m">40</span>
@@ -13263,8 +13324,9 @@ vmse6aj34ipb        whoami              replicated          20/20               
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>whoami scaled to 40
 
-all progress: 40 out of 40 tasks 
-fy: Service converged to verify that tasks are stable... </pre>
+Operation continuing in background.
+Use `docker service ps whoami` to check progress.
+</pre>
 </div>
 </div>
 
@@ -13283,7 +13345,7 @@ fy: Service converged to verify that tasks are stable... </pre>
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service update --update-parallelism <span class="m">5</span> <span class="se">\</span>
@@ -13305,9 +13367,15 @@ fy: Service converged to verify that tasks are stable... </pre>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>whoami
+<pre>image stefanscherer/whoami:1.1.0 could not be accessed on a registry to record
+its digest. Each node will access stefanscherer/whoami:1.1.0 independently,
+possibly leading to different nodes running different
+versions of the image.
 
-all progress: 39 out of 40 tasks </pre>
+whoami
+
+all progress: 40 out of 40 tasks 
+fy: Service converged to verify that tasks are stable... </pre>
 </div>
 </div>
 
@@ -13317,7 +13385,7 @@ all progress: 39 out of 40 tasks </pre>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service ls
@@ -13338,9 +13406,9 @@ all progress: 39 out of 40 tasks </pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                  NAME                MODE                REPLICAS            IMAGE                              PORTS
-ulooqfaxi2eu        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
-wx8tak0n9j6x        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
-vmse6aj34ipb        whoami              replicated          41/40               stefanscherer/whoami:1.1.0         
+bql95rhwlmtn        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
+ohooxit3x6pr        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
+gkhxl78gt5tk        whoami              replicated          40/40               stefanscherer/whoami:1.1.0         
 </pre>
 </div>
 </div>
@@ -13359,7 +13427,7 @@ vmse6aj34ipb        whoami              replicated          41/40               
 </div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service scale --detach<span class="o">=</span><span class="nb">false</span> <span class="nv">whoami</span><span class="o">=</span><span class="m">1</span>
@@ -13393,7 +13461,7 @@ fy: Service converged to verify that tasks are stable... </pre>
 </div></div><div class="fragment">
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service scale --detach<span class="o">=</span><span class="nb">false</span> <span class="nv">whoami</span><span class="o">=</span><span class="m">15</span>
@@ -13441,7 +13509,7 @@ fy: Service converged to verify that tasks are stable... </pre>
 </div></div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service ls
@@ -13462,9 +13530,9 @@ fy: Service converged to verify that tasks are stable... </pre>
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                  NAME                MODE                REPLICAS            IMAGE                              PORTS
-ulooqfaxi2eu        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
-wx8tak0n9j6x        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
-vmse6aj34ipb        whoami              replicated          15/15               stefanscherer/whoami:1.1.0         
+bql95rhwlmtn        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
+ohooxit3x6pr        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
+gkhxl78gt5tk        whoami              replicated          15/15               stefanscherer/whoami:1.1.0         
 </pre>
 </div>
 </div>
@@ -13483,7 +13551,7 @@ vmse6aj34ipb        whoami              replicated          15/15               
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service rm whoami
@@ -13514,7 +13582,7 @@ vmse6aj34ipb        whoami              replicated          15/15               
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service ls
@@ -13535,7 +13603,8 @@ vmse6aj34ipb        whoami              replicated          15/15               
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                  NAME                MODE                REPLICAS            IMAGE                              PORTS
-wx8tak0n9j6x        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
+bql95rhwlmtn        monitor             global              5/5                 stefanscherer/monitor:1.1.0        
+ohooxit3x6pr        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
 </pre>
 </div>
 </div>
@@ -13546,7 +13615,7 @@ wx8tak0n9j6x        visualizer          replicated          1/1                 
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-bash"><pre><span></span>docker service rm monitor
@@ -13598,7 +13667,7 @@ wx8tak0n9j6x        visualizer          replicated          1/1                 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                  NAME                MODE                REPLICAS            IMAGE                              PORTS
-wx8tak0n9j6x        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
+ohooxit3x6pr        visualizer          replicated          1/1                 alexellis2/visualizer-arm:latest   *:8000-&gt;8080/tcp
 </pre>
 </div>
 </div>
@@ -13630,11 +13699,11 @@ wx8tak0n9j6x        visualizer          replicated          1/1                 
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>ID                            HOSTNAME            STATUS              AVAILABILITY        MANAGER STATUS
-rx284usn4d3b2c2xif451af2q *   cluster-00          Ready               Active              Reachable
-lxpvb7dr0hwk0nj96va4wo6ny     cluster-01          Ready               Active              
-6l33eyp0sgsa4t6jlabdtfadf     cluster-02          Ready               Active              Leader
-vafxcqkmo3973p6cye7oaubhi     cluster-03          Ready               Active              
-wclq49biuqsgjql5dryawms5s     cluster-04          Ready               Active              Reachable
+pqp74pxig8s3zs07eafeugjuq *   cluster-00          Ready               Active              Reachable
+0br7aj8dld5sr73vic82s3jo6     cluster-01          Ready               Active              
+v9odvkkycga6enf7ld6uok9vg     cluster-02          Ready               Active              Reachable
+qocjbg98xx6pr5ig1zc4k3dpk     cluster-03          Ready               Active              
+c9rzz568a8lr2jzecbsveikxp     cluster-04          Ready               Active              Leader
 </pre>
 </div>
 </div>
@@ -13710,7 +13779,7 @@ wclq49biuqsgjql5dryawms5s     cluster-04          Ready               Active    
 <div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span><span class="k">for</span> i in <span class="m">01</span> <span class="m">02</span> <span class="m">03</span> <span class="m">04</span> <span class="m">00</span><span class="p">;</span> <span class="k">do</span>
+<div class=" highlight hl-bash"><pre><span></span><span class="k">for</span> i in <span class="m">01</span> <span class="m">02</span> <span class="m">03</span> <span class="m">04</span><span class="p">;</span> <span class="k">do</span>
     ssh cluster-<span class="si">${</span><span class="nv">i</span><span class="si">}</span>.local <span class="s2">&quot;docker swarm leave --force&quot;</span>
 <span class="k">done</span>
 </pre></div>
@@ -13732,7 +13801,6 @@ wclq49biuqsgjql5dryawms5s     cluster-04          Ready               Active    
 <pre>Node left the swarm.
 Node left the swarm.
 Node left the swarm.
-Error response from daemon: context deadline exceeded
 Node left the swarm.
 </pre>
 </div>
@@ -13741,7 +13809,38 @@ Node left the swarm.
 </div>
 </div>
 
-</div></section></section>
+</div><div class="fragment">
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-bash"><pre><span></span>docker swarm leave --force
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Node left the swarm.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></div></section></section>
 </div>
 </div>
 
